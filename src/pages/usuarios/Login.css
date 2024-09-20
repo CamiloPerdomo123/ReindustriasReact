@@ -1,0 +1,64 @@
+/* Video de fondo */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -3; /* Coloca el video detrás del contenido */
+}
+
+/* Contenedor de login */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altura completa de la ventana */
+  position: relative;
+  z-index: 1;
+}
+
+/* Estilos para el formulario */
+.login-form-container {
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+  padding: 2rem;
+  border-radius: 30px; /* Bordes más redondeados */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 650px; /* Ancho máximo del contenedor */
+  width: 100%; /* Ancho del contenedor */
+  margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Estilo para el encabezado */
+.login-form-container h2 {
+  font-family: 'Times New Roman', Times, serif; /* Cambia la fuente aquí */
+  color: #333; /* Color del texto */
+  font-size: 1.8rem; /* Tamaño del texto */
+  text-align: center;
+}
+
+/* Estilo para las etiquetas del formulario */
+.login-form-container .form-label {
+  font-family: 'Roboto', sans-serif; /* Fuente personalizada */
+  font-weight: bold; /* Texto en negrita */
+  color: #555; /* Color de las etiquetas */
+}
+
+/* Estilo para los campos del formulario */
+.login-form-container .form-control {
+  border-radius: 20px; /* Bordes redondeados */
+  border: 1px solid #ccc; /* Color del borde */
+}
+
+/* Estilo para el botón */
+.login-form-container .btn-primary {
+  background-color: #007bff; /* Color de fondo del botón */
+  border-color: #007bff; /* Color del borde del botón */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Cambiar el color del botón al pasar el mouse */
+.login-form-container .btn-primary:hover {
+  background-color: #0cb300; /* Color más oscuro al pasar el mouse */
+}
